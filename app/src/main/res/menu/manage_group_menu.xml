@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.visas.genielogiciel2.ManageGroupActivity">
+    <item
+        android:id="@+id/add_contacts"
+        android:orderInCategory="1"
+        android:title="@string/add_contacts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/edit_group"
+        android:orderInCategory="2"
+        android:title="@string/edit_group"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/delete_group"
+        android:orderInCategory="3"
+        android:title="@string/delete_group"
+        app:showAsAction="never" />
+</menu>

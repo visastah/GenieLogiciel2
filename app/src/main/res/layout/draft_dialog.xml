@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="310dp"
+    android:padding="4dp"
+    >
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            >
+
+            <com.example.visas.genielogiciel2.CircularTextView
+                android:id="@+id/dialog_group_initials"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:text="AEE"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/dialog_message_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="ldkfjielfkldfkgekgke"
+                android:textColor="#fff"
+                android:layout_gravity="center"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/dialog_delete_draft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_delete_white"
+            android:layout_gravity="right|center"/>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaa"
+        android:padding="4dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brouillon"
+            android:textSize="15dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="7">-->
+            <!--android:background="@drawable/customborder">-->
+            <EditText
+                android:id="@+id/dialog_drafted_text"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textSize="20dp"
+                android:textColor="#000"
+                android:layout_weight="7"
+                android:hint="                                                                          "
+                android:background="@drawable/customborder"
+                />
+        <!--</LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="vertical"
+            android:gravity="center">
+
+
+            <ImageButton
+                android:id="@+id/clear_draft"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/redroundedbutton"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_close"
+                android:elevation="0dp"
+                />
+
+            <ImageButton
+                android:id="@+id/save_draft"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/greenroundedbutton"
+                android:src="@drawable/ic_save"
+                android:layout_margin="4dp"
+                android:elevation="0dp"/>
+
+            <ImageButton
+                android:id="@+id/send_draft"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/fadegreenroundedbutton"
+                android:layout_margin="4dp"
+                android:src="@drawable/ic_send"
+                android:elevation="0dp"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
